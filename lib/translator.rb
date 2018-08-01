@@ -5,15 +5,18 @@ new_hash = {}
 
 def load_library(file)
   emojis = YAML.load_file(file)
-  # emojis.each do |define, syntax|
-  #   syntax.each do |english, japanese|
-  #     new_hash[get_meaning] = japanese
-      # new_hash[get_meaning][japanese] = define
-      # new_hash[get_keys] = english 
-      # new_hash[get_keys][english] = define
-  #   end
-  # end
-  p emojis
+   emojis.each do |define, syntax|
+     syntax.each_with_index do |emoticons, i|
+        if i == 0 
+          new_hash[get_meaning] = emoticons
+        else 
+         new_hash[get_keys] = emoticons
+       end
+      new_hash[get_meaning] = define
+      new_hash[get_keys] = define
+     end
+    end
+  p new_hash
 end
 
 
