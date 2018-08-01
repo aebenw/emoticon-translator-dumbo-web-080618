@@ -11,8 +11,8 @@ def load_library(file)
       # new_hash[get_meaning][japanese] = define
       # new_hash[get_keys] = english 
       # new_hash[get_keys][english] = define
-    end
-  end
+  #   end
+  # end
 end
 p emojis
 
