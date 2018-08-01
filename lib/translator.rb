@@ -17,7 +17,7 @@ def load_library(file)
       # new_hash["get_keys"] = define
      end
     end
-  p emojis
+  p new_hash
 end
 
 
