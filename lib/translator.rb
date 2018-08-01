@@ -1,9 +1,10 @@
 require "yaml"
 
-new_hash = {}
+
 
 
 def load_library(file)
+  new_hash = {}
   emojis = YAML.load_file(file)
    emojis.each do |define, syntax|
      syntax.each_with_index do |emoticons, i|
