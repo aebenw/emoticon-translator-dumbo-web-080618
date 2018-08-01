@@ -8,9 +8,9 @@ def load_library(file)
   emojis.each do |define, syntax|
     syntax.each do |english, japanese|
       new_hash[get_meaning] = japanese
-      new_hash[get_meaning][japanese] = define
-      new_hash[get_keys] = english 
-      new_hash[get_keys][english] = define
+      # new_hash[get_meaning][japanese] = define
+      # new_hash[get_keys] = english 
+      # new_hash[get_keys][english] = define
     end
   end
 end
