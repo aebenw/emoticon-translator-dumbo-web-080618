@@ -13,8 +13,9 @@ def load_library(file)
       # new_hash[get_keys][english] = define
   #   end
   # end
+  p emojis
 end
-p emojis
+
 
 def get_japanese_emoticon
   # code goes here
