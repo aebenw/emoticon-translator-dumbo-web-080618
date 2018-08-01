@@ -9,11 +9,11 @@ def load_library(file)
    emojis.each do |define, syntax|
      syntax.each_with_index do |emoticons, i|
         if i == 0 
-          new_hash[get_meaning] = emoticons
+          new_hash["get_meaning"] = emoticons
         else 
-         new_hash[get_keys] = emoticons
+         new_hash["get_keys"] = emoticons
        end
-      new_hash[get_meaning] = define
+      new_hash["get_meaning"] = define
       new_hash[get_keys] = define
      end
     end
