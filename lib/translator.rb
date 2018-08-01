@@ -11,7 +11,7 @@ def load_library(file)
         if i == 0 
           new_hash["get_meaning"] = {emoticons => define}
         else 
-         new_hash["get_emoticon"] = emoticons
+         new_hash["get_emoticon"] = {emoticons => define}
        end
       # new_hash["get_meaning"] = define
       # new_hash["get_keys"] = define
