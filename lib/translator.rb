@@ -1,4 +1,4 @@
-require "yaml"
+require 'yaml'
 
 emoji = YAML.load_file('emoticons.yml')
 
