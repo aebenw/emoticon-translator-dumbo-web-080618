@@ -1,6 +1,6 @@
 require "yaml"
 
-
+new_hash = {}
 
 
 def load_library(file)
