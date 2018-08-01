@@ -2,7 +2,7 @@ require "yaml"
 
 
 
-p emoji
+
 def load_library(file)
   emojis = YAML.load_file(file)
 end
